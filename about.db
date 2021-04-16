@@ -14,3 +14,6 @@ SQLの特徴として、「命令の数は少なくてシンプルだが、複�
 
 ・４大命令・
 SELECT(検索), UPDATE（書き換え）, DELETE（削除）, INSERT（追加）
+
+NULLは＝で判定できない。
+IS NULL や IS NOT NULLを使って条件式を作る。
