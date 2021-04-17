@@ -161,4 +161,17 @@ SQLドリル問題３−１
    UNION
    INTERSECT SELECT 値 FROM 偶数
 
+問題５−１
+1. UPDATE 試験結果
+      SET 午後１ = (80*4) - (86+68+91)
+    WHERE 受験ID = 'SW1046'
+   UPDATE 試験結果
+      SET 論述 = (68*4) - (65+53+70)
+    WHERE 受験ID = 'SW1350'
+    UPDATE 試験結果
+      SET 午前 = (56*4) - (59+56+36)
+    WHERE 受験ID = 'SW1877'
+2. SELECT 受験者ID AS 合格者ID FROM 試験結果
+    WHERE (午前 >= 60) AND ((午後１ + 午後２) >= 120) AND (0.3 * (午前+午後１+午後２+論述) <= 論述)
+
 
